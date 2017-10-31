@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+
+       var A_javascript = 90;
+       var A_python= 80;
+       var A_java = 50;
+       var A_ruby = 40;
+       var A_swift = 10;
+
+       var B_javascript = 90;
+       var B_python= 30;
+       var B_java = 100;
+       var B_ruby = 50;
+       var B_swift = 50;
+
+
+       var C_javascript = 20;
+       var C_python= 30;
+       var C_java = 60;
+       var C_ruby = 50;
+       var C_swift = 20;
+
+       var A_average = avg(A_javascript, A_python, A_java, A_ruby, A_swift);
+       var B_average = avg(B_javascript, B_python, B_java, B_ruby, B_swift);
+       var C_average = avg(C_javascript, C_python, C_java, C_ruby, C_swift);
+
+       var A_max = max(A_javascript, A_python, A_java, A_ruby, A_swift);
+
+       var B_max = max(B_javascript, B_python, B_java, B_ruby, B_swift);
+
+       var C_max = max(C_javascript, C_python, C_java, C_ruby, C_swift);
+
+
+       var A_min = min(A_javascript, A_python, A_java, A_ruby, A_swift);
+
+       var B_min = min(B_javascript, B_python, B_java, B_ruby, B_swift);
+
+       var C_min = min(C_javascript, C_python, C_java, C_ruby, C_swift);
+
+	
+	function max(a,b,c,d,e) {
+		var max = 0;
+		max = (max > a) ? max : a;
+       		max = (max > b) ? max : b;
+       		max = (max > c) ? max : c;
+       		max = (max > d) ? max : d;
+       		max = (max > e) ? max : e;
+		return max;
+	}
+	function min(a,b,c,d,e) {
+		var min = 100;
+		min = (min < a) ? min : a;
+       		min = (min < b) ? min : b;
+       		min = (min < c) ? min : c;
+       		min = (min < d) ? min : d;
+       		min = (min < e) ? min : e;
+		return min;
+	}
+	function avg(a,b,c,d,e) {
+		var avg = (a+b+c+d+e)/5;
+		return avg;
+	}
+		
+       console.log('A 학생의 평균 점수는 ' + A_average + ' , 최고 점수는 ' + A_max + ' , 최하 점수는 ' + A_min + ' 입니다.');
+       console.log('B 학생의 평균 점수는 ' + B_average + ' , 최고 점수는 ' + B_max + ' , 최하 점수는 ' + B_min + ' 입니다.');
+       console.log('C 학생의 평균 점수는 ' + C_average + ' , 최고 점수는 ' + C_max + ' , 최하 점수는 ' + C_min + ' 입니다.');
+
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        var A_mid = 10;
+        var A_end = 8;
+        var B_mid = 1;
+        var B_end = 2;
+        var C_mid = 9;
+        var C_end = 5;
+
+        
+
+	function grade(mid,end){
+		var result = "";
+		for (var i = 0; i < mid; ++i) {
+	            result += "*";
+	        }
+	
+	        for (var i = 0; i < 10 - mid; ++i) {
+	            result += "_";
+	        }
+	
+	        result += " + ";
+	
+	        for (var i = 0; i < end; ++i) {
+	            result += "*";
+	        }
+	
+	        for (var i = 0; i < 10 - end; ++i) {
+	            result += "_";
+	        }
+	
+	        result += " = ";
+	
+        	for (var i = 0; i < mid + end; ++i) {
+        	    result += "*";
+        	}
+
+        	for (var i = 0; i < 20 - (mid + end); ++i) {
+            		result += "_";
+        	}
+		return result;
+	}
+	var A_result = grade(A_mid, A_end);
+	var B_result = grade(B_mid, B_end);
+	var C_result = grade(C_mid, C_end);
+	console.log("A : " + A_result);
+	console.log("B : " + B_result);
+        console.log("C : " + C_result);
+    </script>
+</head>
+<body>
+</body>
+</html>
